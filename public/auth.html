@@ -26,6 +26,10 @@ limitations under the License.
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+
+
+<!-- Added stuff -->
+<!-- 
 <script>
   // Initialize Firebase
   var config = {
@@ -36,7 +40,7 @@ limitations under the License.
     messagingSenderId: "Your ID"
   };
   firebase.initializeApp(config);
-</script>
+</script> -->
 
   <script type="text/javascript">
     /**
@@ -182,5 +186,45 @@ limitations under the License.
     </div>
   </main>
 </div>
+
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <!-- <script src="/__/firebase/7.5.0/firebase-app.js"></script> -->
+  
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <!-- <script src="/__/firebase/7.5.0/firebase-analytics.js"></script> -->
+  
+    <!-- Add Firebase products that you want to use -->
+    <!-- <script src="/__/firebase/7.5.0/firebase-firestore.js"></script> -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDpS0J9DoaG6K7gDB9855feFrxvfUEpGOU",
+    authDomain: "testfirebisi.firebaseapp.com",
+    databaseURL: "https://testfirebisi.firebaseio.com",
+    projectId: "testfirebisi",
+    storageBucket: "testfirebisi.appspot.com",
+    messagingSenderId: "206764599785",
+    appId: "1:206764599785:web:53613d7e08c8e300fc8378",
+    measurementId: "G-KFXKVG3W4S"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </body>
 </html>
